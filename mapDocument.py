@@ -13,3 +13,8 @@ import arcpy, sys, os
 myMap = sys.argv[1]
 mxd = arcpy.mapping.MapDocument(myMap)
 print(mxd)
+print(mxd.author)
+mxd.author = "Zach"
+print(mxd.author)
+print(mxd.dateSaved)
+print(mxd.filePath)
